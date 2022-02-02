@@ -6,31 +6,101 @@ using System.Threading.Tasks;
 
 namespace AddressBook
 {
-    class AddressBook1
+    // Created class 
+    public class Address1
+
+
+
     {
-        public void AddressUC1()
+        // Declaring variables
+        string firstname, lastname, state, city, address, email;
+        int zipcode;
+        long mobilenumber;
+
+        //Creating a constructor ton initialize variables
+        public Address1(string firstname, string lastname, string state, string city, string address, string email, int zipcode, long mobilenumber)
         {
+            this.firstname = firstname;
+            this.lastname = lastname;
+            this.state = state;
+            this.city = city;
+            this.address = address;
+            this.email = email;
+            this.zipcode = zipcode;
+            this.mobilenumber = mobilenumber;
 
-            Console.Write("Enter the First name: ");
-            string firstName = Console.ReadLine();
-            Console.Write("Enter the Last name: ");
-            string lastName = Console.ReadLine();
-            Console.Write("Enter the Address : ");
-            string address = Console.ReadLine();
-            Console.Write("Enter the City : ");
-            string city = Console.ReadLine();
-            Console.Write("Enter the State : ");
-            string state = Console.ReadLine();
-            Console.Write("Enter the Zip : ");
-            int pincode = Convert.ToInt32(Console.ReadLine());
-            Console.Write("Enter the phoneNum : ");
-            double phoneNumber = Convert.ToDouble(Console.ReadLine());
-            Console.Write("Enter the email-id : ");
-            string email = Console.ReadLine();
+        }
 
-            Console.WriteLine(" FullName: {0} {1} \n Address: {2} {3} {4} {5}  \n PhoneNumber: {6} \n Email-Id: {7} ", firstName, lastName, address, city, state, pincode, phoneNumber, email);
+        //Implimenting seter and geter
+        public string GetFirstName()
+        {
+            return firstname;
+        }
+        public void SetFirstName(string firstname)
+        {
+            this.firstname = firstname;
+        }
+        public string GetLastName()
+        {
+            return lastname;
+        }
+        public void SetLastName(string lastname)
+        {
+            this.lastname = lastname;
+        }
+        public string GetState()
+        {
+            return state;
+        }
+        public void SetState(string state)
+        {
+            this.state = state;
+        }
+        public string GetCity()
+        {
+            return city;
+        }
+        public void SetCity(string city)
+        {
+            this.city = city;
+        }
+        public string GetAddress()
+        {
+            return address;
+        }
+        public void SetAddress(string address)
+        {
+            this.address = address;
+        }
+        public string GetEmail()
+        {
+            return email;
+        }
+        public void SetEmail(string email)
+        {
+            this.email = email;
+        }
+        public int GetZipCode()
+        {
+            return zipcode;
+        }
+        public void SetZipCode(int zipcode)
+        {
+            this.zipcode = zipcode;
+        }
+        public long GetMobileNumber()
+        {
+            return mobilenumber;
+        }
+        public void SetMobileNumber(long mobilenumber)
+        {
+            this.mobilenumber = mobilenumber;
+        }
 
-            //Console.WriteLine(firstName + lastName + address + city + state + pincode + phoneNumber + email);
+        //Overrideing string method 
+        public override string ToString()
+        {
+            return ("First Name: " + firstname + " Last Name: " + lastname + " City: " + city + " State: " + state + " Address" + address + " zip: " + zipcode + " Phone Number: " + mobilenumber);
         }
 
     }
