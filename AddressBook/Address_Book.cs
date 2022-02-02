@@ -22,5 +22,50 @@
             this.zipcode = zipcode;
             this.mobilenumber = mobilenumber;
         }
+
+        internal string? GetFirstName()
+        {
+            throw new NotImplementedException();
+        }
+
+        internal void SetFirstName(string? firstname)
+        {
+            throw new NotImplementedException();
+        }
+
+        internal void SetLastName(string? lastname)
+        {
+            throw new NotImplementedException();
+        }
+
+        internal void SetState(string? state)
+        {
+            throw new NotImplementedException();
+        }
+
+        internal void SetCity(string? city)
+        {
+            throw new NotImplementedException();
+        }
+
+        internal void SetAddress(string? address)
+        {
+            throw new NotImplementedException();
+        }
+
+        internal void SetZipCode(int zipcode)
+        {
+            throw new NotImplementedException();
+        }
+
+        internal void SetEmail(string? email)
+        {
+            throw new NotImplementedException();
+        }
+
+        internal void SetMobileNumber(long mobilenumber)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

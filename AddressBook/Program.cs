@@ -1,9 +1,7 @@
 ﻿// See https://aka.ms/new-console-template for more information
 using AddressBook;
-Console.WriteLine("WELCOME TO ADDRESSBOOK");
 
-//AddressBook1 addressBook1 = new AddressBook1();
-//addressBook1.AddressUC1();
+Console.WriteLine("WELCOME TO ADRESS BOOK SYSTEM");
 
 // Creating object of class to call the methods
 AddressDetails addressdetails = new AddressDetails();
@@ -16,7 +14,7 @@ while (key != "n")
 {
     //Asking user to select one option to Add or Display
     Console.WriteLine("Select option");
-    Console.WriteLine("1-Add Contact, 2-Display Contact");
+    Console.WriteLine("1-Add Contact, 2-Display Contact,3-Edit Contact");
     // Creating num variable to store the use input of the option
     int num = int.Parse(Console.ReadLine());
     switch (num)
@@ -29,8 +27,11 @@ while (key != "n")
         case 2:
             addressdetails.view();
             break;
+        case 3:
+            addressdetails.EditContact();
+            break;
     }
-    Console.WriteLine("Do you want to Add Contact Again or want to List the Contact?? preass y/n");
+    Console.WriteLine("Do you want to Add Contact Again or Edit Contact or List the Contact?? preass y/n");
     key = Console.ReadLine();
 }
 Console.ReadLine();

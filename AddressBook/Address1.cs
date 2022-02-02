@@ -8,9 +8,6 @@ namespace AddressBook
 {
     // Created class 
     public class Address1
-
-
-
     {
         // Declaring variables
         string firstname, lastname, state, city, address, email;
