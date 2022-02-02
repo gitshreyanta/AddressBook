@@ -38,6 +38,7 @@ namespace AddressBook
 
             //adding contacts in list
             allcontacts.Add(contacts);
+            Console.WriteLine("Contact is Added");
 
         }
 
@@ -53,6 +54,7 @@ namespace AddressBook
         //Creating method to Edit the Contact
         public void EditContact()
         {
+            //Taking first name as input from the user to check weather this name is existing in contact list or not
             Console.WriteLine("Enter the First Name of your contact that which contact you wants to Edit");
             string Fname = Console.ReadLine();
             foreach (Address_Book eachcontact in allcontacts)
@@ -88,11 +90,41 @@ namespace AddressBook
                     long mobilenumber = Convert.ToInt64(Console.ReadLine());
                     eachcontact.SetMobileNumber(mobilenumber);
                     break;
+                    Console.WriteLine("Contact is updated");
                 }
                 else
                 {
                     Console.WriteLine("Invalid contact name please try again");
 
+                }
+            }
+
+        }
+
+        //Creating method to Delete Contact
+        public void DeleteContact()
+        {
+            //Taking first name as input from the user to check weather this name is existing in contacts list or not
+            Console.WriteLine("Enter the First Name of your contact that which contact you wants to Delete");
+            string Fname = Console.ReadLine();
+            foreach (Address_Book eachcontact in allcontacts)
+            {
+                //Comparing existing firts name to user entered first name
+                if (Fname == eachcontact.GetFirstName())
+                {
+                    Console.WriteLine("Do you really want to Delete this contact?? type y/n");
+                    string key = Console.ReadLine();
+                    if (key == "y")
+                    {
+                        //Removing Contact from the allcontacts list
+                        allcontacts.Remove(eachcontact);
+                        Console.WriteLine("Contact is Deleted");
+                        break;
+                    }
+                    else
+                    {
+                        Console.WriteLine("Contact does not exist please enter valid name");
+                    }
                 }
             }
         }
