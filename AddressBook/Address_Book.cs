@@ -77,5 +77,10 @@
         {
             throw new NotImplementedException();
         }
+
+        public static implicit operator Address_Book(Address1 v)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
