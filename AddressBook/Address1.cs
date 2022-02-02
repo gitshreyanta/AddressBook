@@ -14,6 +14,8 @@ namespace AddressBook
         int zipcode;
         long mobilenumber;
 
+
+
         //Creating a constructor ton initialize variables
         public Address1(string firstname, string lastname, string state, string city, string address, string email, int zipcode, long mobilenumber)
         {
@@ -27,33 +29,23 @@ namespace AddressBook
             this.mobilenumber = mobilenumber;
 
         }
-
-        //Implimenting seter and geter
-        public string GetFirstName()
+        public String GetFirstName()
         {
             return firstname;
         }
-        public void SetFirstName(string firstname)
+        public void SetFirstName(string firstName)
         {
-            this.firstname = firstname;
+            this.firstname = firstName;
         }
-        public string GetLastName()
+        public String GetLastName()
         {
             return lastname;
         }
-        public void SetLastName(string lastname)
+        public void SetLastName(string lastName)
         {
-            this.lastname = lastname;
+            this.lastname = lastName;
         }
-        public string GetState()
-        {
-            return state;
-        }
-        public void SetState(string state)
-        {
-            this.state = state;
-        }
-        public string GetCity()
+        public String GetCity()
         {
             return city;
         }
@@ -61,7 +53,15 @@ namespace AddressBook
         {
             this.city = city;
         }
-        public string GetAddress()
+        public String GetState()
+        {
+            return state;
+        }
+        public void SetState(string state)
+        {
+            this.state = state;
+        }
+        public String GetAddress()
         {
             return address;
         }
@@ -69,7 +69,7 @@ namespace AddressBook
         {
             this.address = address;
         }
-        public string GetEmail()
+        public String GetEmail()
         {
             return email;
         }
@@ -77,22 +77,23 @@ namespace AddressBook
         {
             this.email = email;
         }
-        public int GetZipCode()
+        public int GetZipcode()
         {
             return zipcode;
         }
-        public void SetZipCode(int zipcode)
+        public void SetZipcode(int zip)
         {
             this.zipcode = zipcode;
         }
-        public long GetMobileNumber()
+        public long Getmobilenumber()
         {
             return mobilenumber;
         }
-        public void SetMobileNumber(long mobilenumber)
+        public void Setmobilenumber(long mobilenumber)
         {
             this.mobilenumber = mobilenumber;
         }
+
 
         //Overrideing string method 
         public override string ToString()

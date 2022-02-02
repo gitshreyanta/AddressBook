@@ -67,5 +67,15 @@
         {
             throw new NotImplementedException();
         }
+
+        internal void SetZipcode(int zipcode)
+        {
+            throw new NotImplementedException();
+        }
+
+        internal void Setmobilenumber(long mobilenumber)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
